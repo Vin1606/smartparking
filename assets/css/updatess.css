@@ -1,0 +1,303 @@
+/* CSS TAMBAHAN */
+.text-message {
+	text-align: center;
+}
+
+.text-message-failed {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.logo-program img {
+	width: 70px;
+}
+
+/* Index-User */
+.home-text {
+	display: flex;
+	justify-content: right;
+	font-size: 12px;
+}
+
+.home-parkir {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	margin: 50px 0px;
+	border-radius: 15px;
+	border: 1px solid rgb(255, 0, 0);
+}
+
+.img-parkir img {
+	width: 600px;
+	padding: 30px 20px;
+}
+
+.text-information {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 0 30px 0 10px;
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+	font-family: "Times New Roman";
+	margin: 30px 0 10px 0;
+}
+
+.button-submit {
+	display: flex;
+	margin: 30px 0;
+	justify-content: right;
+}
+
+.button-submit .btn {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.box-benefit {
+	margin: 0 0 50px 0;
+	border-radius: 10px;
+}
+
+.benefit-text {
+	margin: 50px 0 0 0;
+	padding: 20px;
+	font-family: cursive;
+	font-size: 12px;
+	text-align: center;
+	color: black;
+	font-weight: 600;
+	font-size: 15px;
+	background-color: lightblue;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.benefit {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+.harga-terjangkau-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.harga-terjangkau-box i {
+	font-size: 40px;
+}
+.harga-terjangkau-box:hover {
+	color: rgb(0, 0, 0);
+}
+
+.waktu-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.waktu-box i {
+	font-size: 40px;
+}
+.waktu-box:hover {
+	color: rgb(0, 0, 0);
+}
+
+.rain-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.rain-box i {
+	font-size: 40px;
+}
+.rain-box:hover {
+	color: rgb(0, 0, 0);
+}
+
+.lokasi-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.lokasi-box i {
+	font-size: 40px;
+}
+.lokasi-box:hover {
+	color: rgb(0, 0, 0);
+}
+
+.text-box {
+	margin: 10px 0;
+	font-size: 12px;
+}
+
+.box-guide {
+	margin: 90px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box-guide .card {
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box-guide-logo {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	font-size: 20px;
+	color: black;
+}
+
+.box-guide-logo i {
+	display: flex;
+	justify-content: center;
+	border-radius: 100%;
+	padding: 15px 25px;
+	text-align: center;
+	background-color: rgb(0, 117, 29);
+	color: white;
+}
+
+.card-body p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+/* footer */
+.box-information-footer {
+	background-color: #155263;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.lokasi-information,
+.sosial-media-information,
+.contact-information,
+.maps-information {
+	margin: 0 25px;
+	color: white;
+	font-weight: bold;
+	display: flex;
+}
+
+.location-logo,
+.media-logo,
+.contact-logo,
+.maps-logo {
+	margin: 0 10px 0 0;
+}
+
+.lokasi-value,
+.contact-value,
+.maps-value {
+	width: 250px;
+	margin: 10px 30px;
+	color: white;
+	text-align: justify;
+}
+
+.box-sosial-media {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+}
+
+.box-logo-sosial-media {
+	display: flex;
+	margin: 0px 30px;
+	padding: 10px 0;
+}
+
+.box-logo-sosial-media i {
+	margin: 10px 30px 0 0;
+	border-radius: 100%;
+	border: 1px solid white;
+	color: white;
+	padding: 10px 18px;
+	display: flex;
+	justify-content: center;
+}
+
+.box-logo-sosial-media i:hover {
+	color: orange;
+	border: 1px solid orange;
+}
+
+.question-logo,
+.google-maps-info {
+	margin: 30px 30px;
+	color: white;
+}
+
+.call-information,
+.email-information {
+	display: flex;
+	margin: 15px 0;
+}
+.call-text {
+	margin: 0 10px;
+}
+
+/* Profile User */
+.box-profile {
+	margin: 30px 0 0 0;
+	font-family: "Times New Roman";
+	box-shadow: 0 1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+	background-color: rgb(2, 166, 225);
+	color: white;
+	padding: 15px 30px;
+}
+
+.information-profile {
+	padding: 50px 0;
+	font-size: 12px;
+	display: flex;
+	background-color: white;
+}
+
+.gambar-profile {
+	display: flex;
+	justify-content: center;
+	margin: 0 50px 0 30px;
+}
+
+.gambar-profile img {
+	width: 400px;
+	height: 400px;
+}
+
+.card-body-profile {
+	font-size: 15px;
+}
+
+/* Edit Profile */
+
+.button-submit {
+	display: flex;
+	justify-content: left;
+}
+
+.button-submit button {
+	border: none;
+	padding: 10px 20px;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+}
