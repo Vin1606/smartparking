@@ -36,13 +36,21 @@
                             <input type="text" class="form-control form-control-user" id="phone" name="phone" placeholder="Phone Number" value="<?= $user['phone'] ?>">
                             <?= form_error('phone', ' <small class="text-danger pl-2 mb-2">', '</small>'); ?>
                         </div>
-                        <div class="form pl-2 pr-2 mb-5">
-                            <div class="image mb-2" style="font-size: 13px;">Update Your Image Profile</div>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="image" name="image">
-                                <label class="custom-file-label text-center" for="image">Choose file</label>
+                        <div class="form mb-5">
+                            <div class="pl-2 mb-2" style="font-size: 13px;">Update Image Profile</div>
+                            <div class="col-sm-12 pl-2">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="image" name="image">
+                                            <label class="custom-file-label" for="image">Pilih file</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <?= form_error('image', ' <small class="text-danger pl-2 mb-2">', '</small>'); ?>
                         </div>
 
                         <div class=" form-group">
