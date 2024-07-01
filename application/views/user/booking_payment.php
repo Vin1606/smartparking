@@ -87,11 +87,18 @@
                             </div>
                         </div>
 
+                        <div class="form-group row mb-3">
+                            <label for="Deskripsi" class="col-sm-3 col-form-label">Description</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="description" id="description" value="<?= $booking['description']; ?>" readonly>
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-4">
                             <label for="bayar" class="col-sm-3 col-form-label">Input Payment</label>
                             <div class="col-sm-12">
                                 <input type="text" class="form-control" name="pembayaran" id="pembayaran">
-                                <?= form_error('pembayaran', ' <small class="text-danger  mb-2">', '</small>'); ?>
+                                <?= form_error('pembayaran', ' <small class="text-danger mb-2">', '</small>'); ?>
                             </div>
                         </div>
 

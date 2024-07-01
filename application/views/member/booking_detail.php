@@ -30,6 +30,7 @@
                                             <th>Location Parking</th>
                                             <th>Date Booking</th>
                                             <th>Time Booking</th>
+                                            <th>Description</th>
                                             <th>Management</th>
                                         </tr>
                                     </thead>
@@ -48,6 +49,7 @@
                                                 <td><?= 'Block ' . $booking['location_id']; ?></td>
                                                 <td><?= date('d-m-Y', strtotime($booking['date'])); ?></td>
                                                 <td><?= $booking['time']; ?></td>
+                                                <td><?= $booking['description']; ?></td>
                                                 <td style="text-align: center;"> <!-- Tambahkan style text-align: center; di sini -->
                                                     <?php if ($booking['status_pembayaran'] != 'Lunas') : ?>
                                                         <a href="<?= base_url(); ?>member/edit_booking/<?= $booking['id']; ?>" class="btn btn-primary" style="font-size: 12px; margin: 0 5px;">Edit Booking</a>

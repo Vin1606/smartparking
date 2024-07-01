@@ -168,6 +168,9 @@ class Member extends CI_Controller
         $this->form_validation->set_rules('brand', 'Kind Of A Car', 'required|trim');
         $this->form_validation->set_rules('date', 'Date', 'required|trim');
         $this->form_validation->set_rules('time', 'Time', 'required|trim');
+        $this->form_validation->set_rules('description', 'Description', 'max_length[40]|trim', [
+            'max_length' => 'Description should not be more than 40 words'
+        ]);
 
         if ($this->form_validation->run() == false) {
             $this->load->view('user/user_header', $data);

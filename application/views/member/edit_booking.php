@@ -63,7 +63,8 @@
 
                     <div class="form mb-4">
                         <div class="date mb-2" style="font-size: 13px;">Description</div>
-                        <textarea class="form-control" id="description" name="description" rows="4" style="font-size: 12px; border-radius: 10px;"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="4" style="font-size: 12px; border-radius: 10px;"><?= $booking['description']; ?></textarea>
+                        <?= form_error('description', ' <small class="text-danger pl-2 mb-2">', '</small>'); ?>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-user btn-block text-uppercase">
