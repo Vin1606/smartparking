@@ -506,7 +506,7 @@ class User extends CI_Controller
         // Hapus data booking
         $this->Booking_model->hapusDataBooking($id);
 
-        $this->session->set_flashdata('flash', 'Dihapus');
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Booking berhasil dihapus</div>');
         redirect('user/booking_detail');
     }
 
@@ -567,7 +567,7 @@ class User extends CI_Controller
                 'booking_id' => $id,
                 'amount_paid' => 0,
                 'payment_status' => $payment_status,
-                'payment_date' => time()
+                'payment_date' => 0
             ];
             $this->db->insert('payments', $payment_data);
         }
@@ -585,7 +585,7 @@ class User extends CI_Controller
             $this->load->view('user/user_footer');
         } else {
             if ($existing_payment) {
-                $payment_data = ['amount_paid' => $new_amount_paid, 'payment_status' => $payment_status];
+                $payment_data = ['amount_paid' => $new_amount_paid, 'payment_status' => $payment_status, 'payment_date' => date('Y-m-d H:i:s')];
                 $this->db->where('booking_id', $id);
                 $this->db->update('payments', $payment_data);
 
